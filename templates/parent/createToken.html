@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class = "col-md-5">
+       	<form action="createToken" method="post" class="form-horizontal">
+        	{% csrf_token %}
+        	{{createToken.as_p}}
+        	<input type="submit" class="btn btn-success">
+		</form>
+	</div>
+{% endblock %}
+
+

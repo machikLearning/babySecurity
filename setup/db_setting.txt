@@ -1,0 +1,7 @@
+django.db.backends.mysql
+babySecurity
+subway@subwaydata
+dlqmdlwm0711!@#
+subwaydata.mysql.database.azure.com
+3306
+n9uqz(@wpvk2x640(&4zfm5^#9xpp6-8yh51amt8i=@dayg2#3

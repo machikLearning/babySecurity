@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    {%if picture.image %}
+        <div class="col-md-7">
+            <div class="logo wow fadeInDown"> <img src="{{picture.image.url}}" alt="logo" height="348" width="348"></div>
+            {% if picture.isReverse == 0%}
+                <p>뒤집어져 있어요</p>
+            {% endif %}
+        </div>
+    {% else %}
+        <p>카메라를 키고 기기를 연결하세요</p>
+    {% endif %}
+    {% if babyStatus %}
+        {% if babyStatus.isSick == 1 %}
+            <p>애기가 아파요</p>
+        {% endif %}
+    {% endif %}
+{% endblock %}
+

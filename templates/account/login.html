@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class = "col-md-5">
+       	<form action="login" method="post" class="form-horizontal">
+        	{% csrf_token %}
+        	{{loginForm.as_p}}
+        	<input type="submit" class="btn btn-success">
+		</form>
+	</div>
+	<a href="signup" ><button class="btn">회원가입</button></a>
+{% endblock %}
+
